@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tune In</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            display: flex;
+            flex-direction: row;
+        }
+        .manu{
+            width: 20%;
+            background-color: beige;
+            display: grid;
+            grid-template-columns: 1fr 4fr;
+            grid-template-rows: 65px repeat(19,50px);
+        }
+        .brand{
+            background-color: rgb(170, 170, 201);
+        }
+        .middle{
+            width: 60%;
+        }
+        .music{
+            width:20%;
+            background-color: blanchedalmond;
+        }
+        .box{
+            height: 100vh;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box manu">
+            <div class="brand logo"></div>
+            <div class="brand title"><h1>Tune In</h1></div>
+        </div>
+        <div class="box middle"></div>
+        <div class="box music"></div>
+        <div></div>
+    </div>
+</body>
+</html>
