@@ -5,13 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tune In</title>
     <style>
+        /* #07161B */
         *{
             margin: 0;
             padding: 0;
         }
+        body{
+            background-color: #203b41;
+        }
         .container{
             display: flex;
             flex-direction: row;
+            gap: 0.25%;
+
         }
         .manu{
             width: 20%;
@@ -21,10 +27,23 @@
             grid-template-rows: 65px repeat(19,50px);
         }
         .brand{
-            background-color: rgb(170, 170, 201);
+            background-color:#798b8f;
+            color: aliceblue
+;
+        }
+        
+        .title{
+            position: relative;
+            border-left: 1px solid #3D737F;
+        }
+        h1{
+            position: absolute;
+            width: 100%;
+            text-align: left;
         }
         .middle{
             width: 60%;
+            background-color: #3D737F;
         }
         .music{
             width:20%;
@@ -32,6 +51,7 @@
         }
         .box{
             height: 100vh;
+            background-color: #07161B;
         }
 
     </style>
@@ -42,7 +62,10 @@
             <div class="brand logo"></div>
             <div class="brand title"><h1>Tune In</h1></div>
         </div>
-        <div class="box middle"></div>
+        <div class="box middle">
+            <div class="search"></div>
+
+        </div>
         <div class="box music"></div>
         <div></div>
     </div>
